@@ -168,6 +168,13 @@ header a:focus-visible {
     object-fit: contain;
 }
 
+.runtime-ollama img {
+    width: auto;
+    max-width: none;
+    height: 96px;
+    max-height: none;
+}
+
 .runtime-screenshot {
     padding: 0;
     background: #111;
