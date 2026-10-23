@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministral 3 3B | Models Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a class="site-name" href="index.html">Models Hub</a>
+    <nav><a href="index.html">Home</a><a href="models.html" class="current">Models</a><a href="compare.html">Compare</a><a href="topics.html">Topics</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+</header>
+<main>
+<section class="model-detail-head"><div><p class="small-label">Mistral · 3B</p><h1>Ministral 3 3B</h1><p>Ministral 3 3B is Mistral's compact multimodal assistant model, designed for local and edge use.</p><a class="button" href="https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512">View on Hugging Face</a></div></section>
+<section class="detail-columns"><article class="plain-panel"><h2>About this model</h2><p>The model card describes a 3.4B language model with a 0.4B vision encoder and a context window of up to 256K tokens. It can understand images as well as text, supports many languages including Chinese, and includes features such as tool use and structured JSON output.</p><h2>Main features</h2><ul><li>Text and image understanding in a compact model family.</li><li>Multilingual support includes Chinese.</li><li>The card lists up to 256K context and support for tool use and JSON output.</li></ul><h2>Good for</h2><p>Try it for image descriptions, short multilingual chats, or returning a small amount of structured information.</p><h2>Things to keep in mind</h2><p>Image input and long context can need extra resources. Tool-use features do not mean the model can safely take actions by itself.</p></article><article class="plain-panel"><h2>Run it with Ollama</h2><p>Install Ollama first. In a terminal, download the model and then start a chat:</p><pre class="commands">ollama pull ministral-3:3b
+ollama run ministral-3:3b</pre><p>The first command downloads the model. Run the second command to start chatting. Type <code>/bye</code> to leave.</p></article></section>
+<section class="plain-panel"><h2>Try a prompt</h2><p class="sample-prompt">Describe what information could be recorded about a picture of a plant, using three short JSON fields.</p><p>Try the same task with another model and compare the answers.</p></section>
+<p class="back-link"><a href="models.html">Back to the model directory</a></p>
+</main>
+<footer>
+    <p>Models Hub</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemma 4 E4B | Models Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a class="site-name" href="index.html">Models Hub</a>
+    <nav><a href="index.html">Home</a><a href="models.html" class="current">Models</a><a href="compare.html">Compare</a><a href="topics.html">Topics</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+</header>
+<main>
+<section class="model-detail-head"><div><p class="small-label">Gemma · E4B</p><h1>Gemma 4 E4B</h1><p>Gemma 4 E4B is the larger of the two Gemma 4 edge models on this site, with more effective parameters than E2B.</p><a class="button" href="https://huggingface.co/google/gemma-4-E4B">View on Hugging Face</a></div></section>
+<section class="detail-columns"><article class="plain-panel"><h2>About this model</h2><p>E4B has about 4.5B effective parameters (8B including embeddings). Its model card lists a 128K context window. Gemma 4 supports text, image and audio input, so it can be useful beyond text chat when the local setup supports those inputs.</p><h2>Main features</h2><ul><li>More effective parameters than Gemma 4 E2B.</li><li>The family supports text, images and audio.</li><li>A listed 128K context window can help with longer input.</li></ul><h2>Good for</h2><p>Try it for longer summaries, everyday writing, and multimodal experiments on a suitable computer.</p><h2>Things to keep in mind</h2><p>It needs more memory and processing than E2B. A long context does not mean it will understand every detail correctly.</p></article><article class="plain-panel"><h2>Run it with Ollama</h2><p>Install Ollama first. In a terminal, download the model and then start a chat:</p><pre class="commands">ollama pull gemma4:e4b
+ollama run gemma4:e4b</pre><p>The first command downloads the model. Run the second command to start chatting. Type <code>/bye</code> to leave.</p></article></section>
+<section class="plain-panel"><h2>Try a prompt</h2><p class="sample-prompt">Turn these notes into a short paragraph: meeting Tuesday; bring draft; ask about budget; send final copy Friday.</p><p>Try the same task with another model and compare the answers.</p></section>
+<p class="back-link"><a href="models.html">Back to the model directory</a></p>
+</main>
+<footer>
+    <p>Models Hub</p>
+</footer>
+</body>
+</html>

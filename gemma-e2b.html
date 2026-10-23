@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemma 4 E2B | Models Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a class="site-name" href="index.html">Models Hub</a>
+    <nav><a href="index.html">Home</a><a href="models.html" class="current">Models</a><a href="compare.html">Compare</a><a href="topics.html">Topics</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+</header>
+<main>
+<section class="model-detail-head"><div><p class="small-label">Gemma · E2B</p><h1>Gemma 4 E2B</h1><p>Gemma 4 E2B is Google's smaller edge model, designed to bring text and multimodal tasks to devices with limited resources.</p><a class="button" href="https://huggingface.co/google/gemma-4-E2B">View on Hugging Face</a></div></section>
+<section class="detail-columns"><article class="plain-panel"><h2>About this model</h2><p>E2B has about 2.3B effective parameters (5.1B including embeddings). Its model card lists a 128K context window. The Gemma 4 family supports text, image and audio input, although local features depend on the software and hardware being used.</p><h2>Main features</h2><ul><li>Intended for edge and on-device use.</li><li>The family supports text, and also has image and audio abilities.</li><li>Its listed context window is 128K tokens.</li></ul><h2>Good for</h2><p>It is a reasonable option for everyday questions, short writing help and trying a multimodal model locally.</p><h2>Things to keep in mind</h2><p>It is still a small model. Image or audio use can need more resources than text chat, and answers should be checked.</p></article><article class="plain-panel"><h2>Run it with Ollama</h2><p>Install Ollama first. In a terminal, download the model and then start a chat:</p><pre class="commands">ollama pull gemma4:e2b
+ollama run gemma4:e2b</pre><p>The first command downloads the model. Run the second command to start chatting. Type <code>/bye</code> to leave.</p></article></section>
+<section class="plain-panel"><h2>Try a prompt</h2><p class="sample-prompt">Give me three simple ideas for organising a small study desk. Keep each idea to one sentence.</p><p>Try the same task with another model and compare the answers.</p></section>
+<p class="back-link"><a href="models.html">Back to the model directory</a></p>
+</main>
+<footer>
+    <p>Models Hub</p>
+</footer>
+</body>
+</html>

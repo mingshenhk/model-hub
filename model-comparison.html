@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to compare model answers | Models Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a class="site-name" href="index.html">Models Hub</a>
+    <nav><a href="index.html">Home</a><a href="models.html">Models</a><a href="compare.html">Compare</a><a href="topics.html" class="current">Topics</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+</header>
+<main>
+<section class="article-head"><p class="small-label">A REPEATABLE TEST</p><h1>Compare answers with a simple rubric</h1><p>A fair test holds the prompt and computer steady, then checks answers against criteria you can explain.</p></section>
+<article class="article-body">
+<h2>Use one prompt with verifiable facts</h2>
+<p>Try this prompt with two model tags: <em>“Summarise this notice in exactly three bullet points. Keep the date, location, and action the reader must take: The science club meets in Room 12 on Thursday 14 May at 3:30 pm. Bring your completed plant-growth chart. Tell Ms Lee by Tuesday if you cannot attend.”</em></p>
+<p>Keep the exact prompt, Ollama version, computer, and context setting the same. Record the model tags. Run each one twice if you can; a single answer may not represent its usual behaviour.</p>
+<h2>Score what matters for this task</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col">Criterion</th><th scope="col">0 points</th><th scope="col">1 point</th><th scope="col">2 points</th></tr></thead><tbody><tr><td>Facts</td><td>Changes or misses key facts</td><td>Keeps most facts</td><td>Keeps date, room, time, and action</td></tr><tr><td>Format</td><td>Not three bullets</td><td>Three bullets with extra text</td><td>Exactly three concise bullets</td></tr><tr><td>Clarity</td><td>Hard to act on</td><td>Mostly clear</td><td>Reader can quickly see what to do</td></tr></tbody></table></div>
+<p>This rubric totals six points, but it is a classroom comparison rather than a published benchmark. The useful result is the evidence: which details disappeared, whether the format was followed, and how long each response took.</p>
+<h2>Write down the result</h2>
+<p>Save the prompt, model tag, scores, and one sentence describing a mistake or strength. If one model wins on accuracy but takes much longer, that trade-off may matter for your use. Try a second task before making a general claim about which model is “best.”</p>
+<p>Check the model's own notes before testing: for example, the official <a href="https://ollama.com/library/qwen3">Qwen3</a> and <a href="https://ollama.com/library/gemma4">Gemma 4</a> pages list tags and package details that can change over time.</p>
+</article>
+<nav class="article-related" aria-label="Related pages"><h2>Related pages</h2><a href="compare.html">Compare the model list</a><a href="small-models-explained.html">Small models explained</a><a href="prompt-tips.html">Prompt tips</a></nav>
+</main>
+<footer><p>Models Hub</p></footer>
+</body>
+</html>

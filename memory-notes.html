@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory and model size | Models Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a class="site-name" href="index.html">Models Hub</a>
+    <nav><a href="index.html">Home</a><a href="models.html">Models</a><a href="compare.html">Compare</a><a href="topics.html" class="current">Topics</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+</header>
+<main>
+<section class="article-head"><p class="small-label">LOCAL PERFORMANCE</p><h1>Why memory use changes while you chat</h1><p>The file you download is only one part of the memory picture. Context length and how the model is loaded matter too.</p></section>
+<article class="article-body">
+<h2>Download size is not the full runtime cost</h2>
+<p>A model package occupies storage on disk. When Ollama runs it, the model is loaded into available system memory and may be split between CPU and GPU. The active conversation also needs a context cache, so memory use can grow when you ask the model to consider more text.</p>
+<p>Ollama documents a default context length of 4096 tokens and lets you change it with the <code>num_ctx</code> option. A larger context can help with a long document, but it may require more memory. Running several requests at once can raise the demand again.</p>
+<h2>Check what your computer is doing</h2>
+<ol><li>Start one model and send a short prompt.</li><li>In another terminal, run <code>ollama ps</code> to see which model is loaded and its CPU/GPU allocation.</li><li>Try a longer prompt, then check the process again and note whether the response slows down or memory becomes tight.</li><li>Close the session or unload the model before comparing another one.</li></ol>
+<p>For example, if a model responds quickly to “Define evaporation in one sentence” but slows down when given several pages of notes, the longer context may be part of the difference. Compare on the same machine and avoid changing multiple settings at once.</p>
+<h2>Choose a useful context size</h2>
+<p>For short questions, the default may be enough. For a longer assignment, increase context only as far as the task needs, then test memory and response time. A larger context is capacity, not a guarantee that the model will understand every detail.</p>
+<p>Ollama explains <a href="https://docs.ollama.com/faq">memory use, context length, parallel requests, and <code>ollama ps</code> in its FAQ</a>, and documents <a href="https://docs.ollama.com/modelfile">model options such as <code>num_ctx</code></a>.</p>
+</article>
+<nav class="article-related" aria-label="Related pages"><h2>Related pages</h2><a href="small-models-explained.html">Small models explained</a><a href="hardware.html">Hardware guide</a><a href="getting-started.html">Get started</a></nav>
+</main>
+<footer><p>Models Hub</p></footer>
+</body>
+</html>

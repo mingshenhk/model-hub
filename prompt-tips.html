@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt tips | Models Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a class="site-name" href="index.html">Models Hub</a>
+    <nav><a href="index.html">Home</a><a href="models.html">Models</a><a href="compare.html">Compare</a><a href="topics.html" class="current">Topics</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+</header>
+<main>
+<section class="article-head"><p class="small-label">BETTER INSTRUCTIONS</p><h1>Give a small model a clear job</h1><p>Short models often benefit from concrete instructions about the reader, output, and details to keep.</p></section>
+<article class="article-body">
+<h2>Replace a vague request with a bounded one</h2>
+<p><strong>Vague:</strong> “Tell me about photosynthesis.”</p>
+<blockquote><strong>More specific:</strong> “Explain photosynthesis to a 12-year-old in four bullet points. Mention sunlight, water, carbon dioxide, and sugar. Use simple words and finish with one question I can answer.”</blockquote>
+<p>The second request gives the model a reader, a length, required facts, and a clear ending. You can check each requirement against the answer.</p>
+<h2>Four details that make a prompt easier to check</h2>
+<ul><li><strong>Task:</strong> say whether you want an explanation, summary, rewrite, or quiz.</li><li><strong>Audience:</strong> name the reader's age or prior knowledge.</li><li><strong>Shape:</strong> request a number of bullets, a table, or a word limit.</li><li><strong>Must-keep facts:</strong> list names, dates, figures, or terms that should stay unchanged.</li></ul>
+<h2>Split a crowded request</h2>
+<p>If you ask for a summary, translation, fact check, and quiz in one message, a compact model may skip one part. Ask for the summary first, inspect it, then request the next step. This makes errors easier to spot.</p>
+<p>When testing prompts, keep the model tag fixed and change one instruction at a time. Save the prompt that worked so you can repeat the test with another model. Ollama's <a href="https://ollama.com/library/qwen3">Qwen3</a> and <a href="https://ollama.com/library/gemma4">Gemma 4</a> listings show the model variants available to try.</p>
+</article>
+<nav class="article-related" aria-label="Related pages"><h2>Related pages</h2><a href="model-comparison.html">Compare model answers</a><a href="study.html">Study prompts</a><a href="writing.html">Writing prompts</a></nav>
+</main>
+<footer><p>Models Hub</p></footer>
+</body>
+</html>

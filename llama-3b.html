@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llama 3.2 3B | Models Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a class="site-name" href="index.html">Models Hub</a>
+    <nav><a href="index.html">Home</a><a href="models.html" class="current">Models</a><a href="compare.html">Compare</a><a href="topics.html">Topics</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+</header>
+<main>
+<section class="model-detail-head"><div><p class="small-label">Llama · 3B</p><h1>Llama 3.2 3B</h1><p>Llama 3.2 3B is Meta's instruction-tuned text model with three times the parameter count of the 1B version.</p><a class="button" href="https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct">View on Hugging Face</a></div></section>
+<section class="detail-columns"><article class="plain-panel"><h2>About this model</h2><p>The model card lists a 128K-token context window and supports text input and output. It is tuned to follow instructions and supports English, Spanish, German, French, Italian, Portuguese, Hindi and Thai. It may give more detailed responses than the 1B model, but takes more memory to run.</p><h2>Main features</h2><ul><li>3B parameters, with more capacity than Llama 3.2 1B.</li><li>Text-only model tuned for assistant-style instructions.</li><li>The listed context window is 128K tokens.</li></ul><h2>Good for</h2><p>Try it for summaries, everyday writing, and straightforward coding or explanation prompts.</p><h2>Things to keep in mind</h2><p>It still makes mistakes and may need more memory than the 1B version. Check Meta's model terms before broader use.</p></article><article class="plain-panel"><h2>Run it with Ollama</h2><p>Install Ollama first. In a terminal, download the model and then start a chat:</p><pre class="commands">ollama pull llama3.2:3b
+ollama run llama3.2:3b</pre><p>The first command downloads the model. Run the second command to start chatting. Type <code>/bye</code> to leave.</p></article></section>
+<section class="plain-panel"><h2>Try a prompt</h2><p class="sample-prompt">Explain the difference between a list and a paragraph in HTML, using one short example of each.</p><p>Try the same task with another model and compare the answers.</p></section>
+<p class="back-link"><a href="models.html">Back to the model directory</a></p>
+</main>
+<footer>
+    <p>Models Hub</p>
+</footer>
+</body>
+</html>

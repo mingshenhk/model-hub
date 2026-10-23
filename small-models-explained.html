@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small models explained | Models Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a class="site-name" href="index.html">Models Hub</a>
+    <nav><a href="index.html">Home</a><a href="models.html">Models</a><a href="compare.html">Compare</a><a href="topics.html" class="current">Topics</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+</header>
+<main>
+<section class="article-head"><p class="small-label">MODEL BASICS</p><h1>What does “small model” mean?</h1><p>Parameter count is useful for a first comparison, but it is only one part of the experience. Download size, memory use, and answer quality describe different things.</p></section>
+<article class="article-body">
+<h2>Three numbers that answer different questions</h2>
+<p><strong>Parameters</strong> are the learned values inside a model. A label such as 0.6B means about 600 million parameters; it does not tell you the exact download size or how much memory a running chat will need.</p>
+<p><strong>Download size</strong> depends on the packaged weights and their quantization. For example, the Ollama Qwen3 library lists the <code>qwen3:0.6b</code> package at about 523 MB and <code>qwen3:1.7b</code> at about 1.4 GB. These are concrete package sizes, not a promise about total runtime memory. Tags and packages can change, so check the current model page before downloading.</p>
+<p><strong>Runtime memory</strong> also includes the active context and other program overhead. A small download may still feel slow if the computer has little free memory or if the conversation is long.</p>
+<h2>A practical comparison</h2>
+<p>Suppose you ask both models to turn a short school notice into three bullet points. The 0.6B version may start faster and use less disk space. The 1.7B version has more parameters and may preserve more details, but it can also take more resources. Neither size label proves which answer is better for your notice.</p>
+<p>Use the same prompt and check whether each answer keeps the date, place, and action. That small test tells you more about this task than the parameter count alone.</p>
+<h2>Try it yourself</h2>
+<ol><li>Record the exact model tag and package size.</li><li>Give two models the same short task on the same computer.</li><li>Compare correctness, missing details, response time, and whether the output follows your requested format.</li></ol>
+<p>See the current <a href="https://ollama.com/library/qwen3">Ollama Qwen3 model tags and package sizes</a> and the <a href="https://huggingface.co/Qwen/Qwen3-0.6B">Qwen3 0.6B model card</a> for model-specific information.</p>
+</article>
+<nav class="article-related" aria-label="Related pages"><h2>Related pages</h2><a href="memory-notes.html">Memory and model size</a><a href="compare.html">Compare models</a><a href="models.html">Model directory</a></nav>
+</main>
+<footer><p>Models Hub</p></footer>
+</body>
+</html>

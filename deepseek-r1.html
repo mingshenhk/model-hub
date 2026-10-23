@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepSeek R1 Distill Qwen 1.5B | Models Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a class="site-name" href="index.html">Models Hub</a>
+    <nav><a href="index.html">Home</a><a href="models.html" class="current">Models</a><a href="compare.html">Compare</a><a href="topics.html">Topics</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+</header>
+<main>
+<section class="model-detail-head"><div><p class="small-label">DeepSeek · 1.5B</p><h1>DeepSeek R1 Distill Qwen 1.5B</h1><p>DeepSeek R1 Distill Qwen 1.5B is a compact model trained to imitate some reasoning behaviour of DeepSeek R1.</p><a class="button" href="https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B">View on Hugging Face</a></div></section>
+<section class="detail-columns"><article class="plain-panel"><h2>About this model</h2><p>It uses a Qwen2 1.5B base and was fine-tuned with examples from DeepSeek R1. Its training gives extra attention to reasoning tasks such as maths and logic. It may show a longer reasoning-style response than a general chat model, but the explanation can still contain mistakes.</p><h2>Main features</h2><ul><li>About 1.5B parameters, making it a small reasoning model.</li><li>Distillation transfers response patterns from a larger teacher model.</li><li>It is interesting to try on maths and logic questions.</li></ul><h2>Good for</h2><p>Use it to practise breaking a small problem into steps or compare how models explain an answer.</p><h2>Things to keep in mind</h2><p>A detailed chain of reasoning is not proof that the final answer is correct. Check calculations and facts yourself.</p></article><article class="plain-panel"><h2>Run it with Ollama</h2><p>Install Ollama first. In a terminal, download the model and then start a chat:</p><pre class="commands">ollama pull deepseek-r1:1.5b
+ollama run deepseek-r1:1.5b</pre><p>The first command downloads the model. Run the second command to start chatting. Type <code>/bye</code> to leave.</p></article></section>
+<section class="plain-panel"><h2>Try a prompt</h2><p class="sample-prompt">A notebook costs £3 and a pen costs £2. What do two notebooks and three pens cost? Show the calculation briefly.</p><p>Try the same task with another model and compare the answers.</p></section>
+<p class="back-link"><a href="models.html">Back to the model directory</a></p>
+</main>
+<footer>
+    <p>Models Hub</p>
+</footer>
+</body>
+</html>

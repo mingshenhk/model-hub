@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phi-4-mini | Models Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a class="site-name" href="index.html">Models Hub</a>
+    <nav><a href="index.html">Home</a><a href="models.html" class="current">Models</a><a href="compare.html">Compare</a><a href="topics.html">Topics</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+</header>
+<main>
+<section class="model-detail-head"><div><p class="small-label">Phi · 3.8B</p><h1>Phi-4-mini</h1><p>Phi-4-mini is Microsoft's 3.8B instruction model, designed to provide useful reasoning in a smaller package.</p><a class="button" href="https://huggingface.co/microsoft/Phi-4-mini-instruct">View on Hugging Face</a></div></section>
+<section class="detail-columns"><article class="plain-panel"><h2>About this model</h2><p>This is a text model with a 128K-token context window listed on its model card. Microsoft describes a focus on maths, logic and other reasoning tasks, as well as instruction following and function calling. It is useful to compare against other small models on structured questions.</p><h2>Main features</h2><ul><li>3.8B parameters and text input/output.</li><li>Training gives attention to maths, logic and reasoning.</li><li>The model card lists a 128K context window and function-calling support.</li></ul><h2>Good for</h2><p>It may work well for short explanations, structured answers, basic maths practice and simple coding questions.</p><h2>Things to keep in mind</h2><p>Reasoning ability is not perfect, and a long context can use more memory. Verify calculations and important information.</p></article><article class="plain-panel"><h2>Run it with Ollama</h2><p>Install Ollama first. In a terminal, download the model and then start a chat:</p><pre class="commands">ollama pull phi4-mini
+ollama run phi4-mini</pre><p>The first command downloads the model. Run the second command to start chatting. Type <code>/bye</code> to leave.</p></article></section>
+<section class="plain-panel"><h2>Try a prompt</h2><p class="sample-prompt">A class has 24 students. One quarter are absent. How many students are present? Show the calculation.</p><p>Try the same task with another model and compare the answers.</p></section>
+<p class="back-link"><a href="models.html">Back to the model directory</a></p>
+</main>
+<footer>
+    <p>Models Hub</p>
+</footer>
+</body>
+</html>
